@@ -23,6 +23,7 @@ resource "azurerm_container_app_environment" "container_env" {
   resource_group_name            = var.resource_group_name
   infrastructure_subnet_id       = var.container_app_environment_infrastructure_subnet_id
   internal_load_balancer_enabled = var.container_app_environment_internal_load_balancer_enabled
+  zone_redundancy_enabled        = var.container_app_environment_zone_redundancy_enabled
   tags                           = var.container_app_environment_tags
 }
 
